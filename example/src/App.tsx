@@ -11,7 +11,7 @@ import {
 } from 'react-icons/md'
 
 import './App.css'
-import { Rating } from 'react-simple-star-rating'
+import { Rating } from '@hireflix/react-simple-star-rating'
 import { UrlSVG } from './IconsSVG'
 
 const tooltipArray = [

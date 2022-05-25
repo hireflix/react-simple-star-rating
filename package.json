@@ -62,9 +62,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "react",
     "star rating",
