@@ -62,6 +62,7 @@ function reducer(state: State, action: Action): State {
 
 export interface Props {
   onClick?: (value: number) => void
+  onHover?: (value: number | null) => void
   initialValue?: number
   ratingValue: number
   iconsCount?: number
@@ -94,6 +95,7 @@ export interface Props {
 
 export function Rating({
   onClick,
+  onHover,
   initialValue = 0,
   ratingValue = 0,
   iconsCount = 5,
@@ -125,6 +127,10 @@ export function Rating({
     defaultValue: ratingValue,
     hoverValue: null
   })
+
+  React.useEffect(() => {
+    onHover?.(hoverValue)
+  }, [hoverValue, onHover]);
 
   // re-render when ratingValue changes
   React.useEffect(() => dispatch({ type: 'MouseClick', payload: ratingValue }), [ratingValue])
