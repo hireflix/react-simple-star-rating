@@ -1,6 +1,6 @@
 {
   "name": "@hireflix/react-simple-star-rating",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "private": false,
   "description": "A simple react component for adding a star rating to your project.",
   "author": "awran5 <awran5@yahoo.com>",
